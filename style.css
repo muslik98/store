@@ -1,0 +1,325 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+  }
+
+  html {
+    line-height: 1.5;
+    word-break: break-all;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+
+  nav ol, nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mlr-20 {
+    padding: 0 30px;
+  }
+
+  .navbar-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo p {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .button {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+  }
+
+  .button button {
+    width: 104px;
+    height: 36px;
+    border-radius: 100px;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+
+  #login {
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 3, 3);
+  }
+
+  #signup {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+  }
+
+  #navbar-2 {
+    border-top: 1px solid rgba(197, 197, 197, 0.3);
+    border-bottom: 1px solid rgba(197, 197, 197, 0.3);
+    display: flex;
+  }
+
+  .nav {
+    width: 50%;
+    margin: 0 0 0 33px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .chart {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 33px 0 0;
+  }
+
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 422px;
+    margin: 25px 0 25px 0;
+    background-image: url(./assets/shirt-ga4393cdca_1280.jpg);
+    background-size: cover;
+    border-radius: 32px;
+    position: relative;
+  }
+
+  .jumbotron::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .4;
+    border-radius: 32px;
+  }
+
+  .jumbotron > * {
+    z-index: 10;
+    position: relative;
+  }
+
+  .jumbotron h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .jumbotron form {
+    display: flex;
+    width: 60%;
+    height: 56px;
+    justify-content: center;
+		align-items: center;
+		margin: 10px 0;
+		position: relative;
+  }
+
+  #s-input {
+    height: 100%;
+    position: relative;
+    padding: 8px 65px 8px 55px;
+    border: none;
+    border-radius: 100px;
+    flex: 1;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  #s-input:focus {
+    outline: 1px solid rgb(71, 202, 210);
+  }
+
+  #s-input + svg {
+    position: absolute;
+    left: 1.3vw;
+  }
+
+  .s-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(71, 202, 210);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    border: none;
+    right: 1.3vw;
+  }
+
+  .o-button {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .o-button * {
+    height: 40px;
+    border-radius: 100px;
+    border: none;
+    padding: 0 20px 0 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+
+  main section:first-child {
+    margin-bottom: 30px;
+  }
+
+  main section:last-child {
+    margin-bottom: 50px;
+  }
+
+  .header-product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+  }
+
+  .header-product p {
+    margin: 0 0 20px 0;
+  }
+
+  .text-header {
+    font-size: 20px;
+    color: rgb(33, 33, 33);
+  }
+
+  .product {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .list-product{
+    width: 230x;
+  }
+
+  .product-name p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(3, 3, 3, 0.7);
+    line-height: 20px;
+    letter-spacing: 0;
+    margin-bottom: 4px;
+  }
+
+  .price {
+    margin: 0;
+    color: rgb(33, 33, 33);
+    line-height: 20px;
+    letter-spacing: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .product-name {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .like {
+    display: flex;
+    align-items: center;
+  }
+
+  .like p {
+    margin-right: 5px;
+  }
+
+  .product img {
+    width: 230px;
+    height: 230px;
+    border-radius: 24px;
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(249, 249, 249);
+  }
+
+  .footer {
+    width: 35%;
+    border-right: 1px solid rgb(227,227,227);
+  }
+
+  .head-footer h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+  }
+
+  .head-footer p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 16px;
+  }
+
+  .footer > p {
+    margin: 40px 0 20px 0;
+  }
+
+  .header-news {
+    width: 80%;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  #fs-input {
+    height: 52px;
+    border: none;
+    border-radius: 100px;
+    flex: 1;
+    font-size: 16px;
+    box-shadow: rgba(3, 3, 3, 0.08) 0px 1px 12px;
+  }
+
+  #fs-input:focus {
+    outline: 1px solid rgb(71, 202, 210);
+  }
+
+  .fs-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(71, 202, 210);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    border: none;
+    right: 10px;
+  }
+
+  .f-right {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
