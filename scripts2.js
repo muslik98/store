@@ -29,14 +29,14 @@ fakeStoreAPI()
     });
 
 function renderRecently(data) {
-  const productLists = document.querySelector('.product');
+  const productLists = document.querySelector('#recently');
   const categoryRecently = ["recent"];
   console.log(data);
 
     data[categoryRecently].forEach(product => {
         productLists.innerHTML += `
-        <div class="list-product">
-            <div class="image-product">
+        <div class="daftar-produk">
+            <div class="gambar-produk">
                 <img src="${product.image}" alt="product-1">
             </div>
                 <div class="product-name">
@@ -54,13 +54,12 @@ function renderRecently(data) {
 function renderRecommend(data) {
   const recommendProduct = document.querySelector('#recommend');
   const categoriesToShow = ["electronics", "jewelery", "random"];
-  console.log(categoriesToShow);
 
   categoriesToShow.forEach(category => {
     data[category].forEach(product => {
       recommendProduct.innerHTML += `
-        <div class="list-product">
-          <div class="image-product">
+        <div class="daftar-produk">
+          <div class="gambar-produk">
             <img src="${product.image}" alt="product-1">
           </div>
           <div class="product-name">
@@ -75,7 +74,3 @@ function renderRecommend(data) {
     });
   });
 }
-
-// function renderProducts(data) {
-//     
-// }
